@@ -1,2 +1,2 @@
 # VBA-challenge
-Module 2
+Sources outside of course curriculum: ChatGPT, Stack Overflow
