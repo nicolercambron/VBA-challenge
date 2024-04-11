@@ -72,6 +72,14 @@ Sub Ticker(ws As Worksheet)
             ws.Range("J" & Summary_Table_Row).Interior.Color = RGB(0, 255, 0)
             End If
 
+            If Percent_Change < 0 Then
+            ' Red for neg
+            ws.Range("K" & Summary_Table_Row).Interior.Color = RGB(255, 0, 0)
+            ' Green for pos
+            ElseIf Percent_Change > 0 Then
+            ws.Range("K" & Summary_Table_Row).Interior.Color = RGB(0, 255, 0)
+            End If
+
             ' Update maximum percent increase
             If Percent_Change > maxPercentIncrease Then
                 maxPercentIncrease = Percent_Change
